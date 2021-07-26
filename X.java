@@ -1,9 +1,7 @@
 public class X implements Runnable {
 
     @Override
-    public void run() {
-        // TODO Auto-generated method stub
-        
+    public void run() {        
     }
 
     public static void main(String[] args) {
