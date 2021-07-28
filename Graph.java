@@ -20,9 +20,10 @@ public class Graph {
         graph.get(v).add(u);
     }
 
-    void DFS(int v, boolean visited[])
+    void DFS(int v)
     {
         Stack<Integer> stack=new Stack<>();
+        boolean visited[]=new boolean[graph.size()];
         stack.push(v);
 
         while(!stack.isEmpty())
@@ -44,6 +45,31 @@ public class Graph {
         }
     }
 
+    void BFS(int v)
+    {
+        Queue<Integer> queue=new LinkedList<>();
+        boolean visited[]=new boolean[graph.size()];
+
+        queue.add(v);
+        visited[v]=true;
+        while(!queue.isEmpty())
+        {
+            v=queue.poll();
+            System.out.print(v+" ");
+
+            Iterator<Integer> i=graph.get(v).iterator();
+            while(i.hasNext())
+            {
+                int n=i.next();
+                if(!visited[n])
+                {
+                    queue.add(n);
+                    visited[n]=true;
+                }
+            }
+        }
+    }
+
     void printGraph() {
         int x = 0;
         for (HashSet<Integer> i : graph) {
@@ -61,11 +87,12 @@ public class Graph {
         for(int i=0;i<4;i++)
             ob.addVertex();
         int arr[][]={{0, 1}, {0, 2}, {1, 2}, {2,0}, {2,3}, {3,3}};
-        boolean visited[]=new boolean[ob.graph.size()];
         for(int[] i:arr)
             ob.addEdge(i[0],i[1]);
         ob.printGraph();
         System.out.println("__________________________________________");
-        ob.DFS(0, visited);
+        ob.DFS(0);
+        System.out.println("\n__________________________________________");
+        ob.BFS(3);
     }
 }
