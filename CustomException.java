@@ -12,6 +12,7 @@ public class CustomException {
     }
     public static void main(String[] args) {
         CustomException ob=new CustomException();
+        ob.test();
     }
 }
 
