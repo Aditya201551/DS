@@ -24,12 +24,21 @@ class Th1 extends Thread{
         try{
             System.out.println("Thread "+currentThread().getId()+": "+currentThread().getName()+" is running");
             String s=sc.nextLine();
-            System.out.println("Hello "+s+" this is "+currentThread().getId());
+            System.out.println("Hello "+s+" this is "+currentThread().getId()+" "+currentThread().getState());
             sc.close();
         } catch(Exception e)
         {
             System.out.println("Exception caught "+e);
         }
+    }
+    
+    void show()
+    {
+        System.out.println("Main method of Th1 class is called");
+    }
+    public static void main(String[] args) { //while running the program it will be asked to run which class (list of all the classes that contains main function will be displayed)
+        Th1 ob=new Th1();
+        ob.show();
     }
 }
 
