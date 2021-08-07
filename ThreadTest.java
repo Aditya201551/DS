@@ -5,7 +5,7 @@ public class ThreadTest {
         {
             Th1 t1 = new Th1();
             Th2 t2 = new Th2();
-            Thread ob2 = new Thread(t2, "Non Input Thread");
+            Thread ob2 = new Thread(t2, "None Input Thread");
             t1.start();
             ob2.start();
         }
