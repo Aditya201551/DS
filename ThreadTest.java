@@ -36,15 +36,12 @@ class Th1 extends Thread{
     {
         System.out.println("Main method of Th1 class is called");
     }
-    public static void main(String[] args) { //while running the program it will be asked to run which class (list of all the classes that contains main function will be displayed)
-        Th1 ob=new Th1();
-        ob.show();
-    }
 }
 
 class Th2 implements Runnable{
     public void run()
     {
+        
         try{
             System.out.println(
                     "Thread " + Thread.currentThread().getId() + ": " + Thread.currentThread().getName() + " is running");
