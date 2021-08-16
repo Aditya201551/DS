@@ -2,22 +2,36 @@ import java.io.*;
 class File{
     public static void main(String args[])
     {
-        String file="C:\\Users\\Aditya Raj\\Desktop\\fileTest.txt";
+        String location="C:\\Users\\Aditya Raj\\Desktop\\fileTest.txt";
+        File ob=new File();
+        ob.write(location);
+        ob.read(location);
+    }
+    void write(String location)
+    {
+        try {
+            FileOutputStream fout = new FileOutputStream(location);
+            for (int i = 1; i <= (255); i++)
+                fout.write(i);
+            System.out.println("Success");
+            fout.close();
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }   
+    }
+
+    void read(String location)
+    {
         try{
-        FileOutputStream fout=new FileOutputStream(file);
-        fout.write(65);
-        fout.write(66);
-        fout.write(67);
-        byte arr[]=new byte[2001];
-        byte x=0;
-        for(int i=0;i<2001;i++)
-            arr[i]=x++;
-        fout.write(arr);
-        fout.close();
-        System.out.println("Success");
+            FileInputStream fin=new FileInputStream(location);
+            int i=0;
+            while((i=fin.read())!=-1)
+                System.out.print((char)i);
+                fin.close();
         } catch(Exception e)
         {
             System.out.println("Error: "+e);
         }
     }
+
 }
