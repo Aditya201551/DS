@@ -9,6 +9,6 @@ public class Fibonacci {
     public static void main(String args[])
     {
         Fibonacci ob=new Fibonacci();
-        System.out.println(ob.fib(100));
+        System.out.println(ob.fib(10));
     }
 }
