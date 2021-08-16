@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Graph",
+            "request": "launch",
+            "mainClass": "Graph",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
+            "name": "Launch GraphWeighted",
+            "request": "launch",
+            "mainClass": "GraphWeighted",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
             "name": "Launch File",
             "request": "launch",
             "mainClass": "File",

@@ -86,7 +86,7 @@ public class Graph {
         Graph ob=new Graph();
         for(int i=0;i<4;i++)
             ob.addVertex();
-        int arr[][]={{0, 1}, {0, 2}, {1, 2}, {2,0}, {2,3}, {3,3}};
+        int arr[][]={{0, 1}, {0, 2}, {1, 2}, {2,0}, {2,3}, {3,1}};
         for(int[] i:arr)
             ob.addEdge(i[0],i[1]);
         ob.printGraph();
