@@ -125,7 +125,8 @@ public class GraphWeighted {
         }
         // ob.printGraph();
         ob.dijkstra(0);
-        System.out.println(ob.pathLength[3]);
+        // System.out.println(ob.pathLength[3]);
+        System.out.println(Arrays.toString(ob.pathLength)+"\n"+Arrays.toString(ob.pred)+"\n"+Arrays.toString(ob.isPermanent));
         // ob.deleteEdge(0, 1);
         // ob.deleteEdge(0, 2);
         // ob.deleteEdge(0, 3);
