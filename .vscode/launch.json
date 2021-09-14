@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HuffmanTree",
+            "request": "launch",
+            "mainClass": "HuffmanTree",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
+            "name": "Launch FreqCheck",
+            "request": "launch",
+            "mainClass": "FreqCheck",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
             "name": "Launch comp",
             "request": "launch",
             "mainClass": "comp",
