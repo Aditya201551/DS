@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch comp",
+            "request": "launch",
+            "mainClass": "comp",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
             "name": "Launch ActivitySelection",
             "request": "launch",
             "mainClass": "ActivitySelection",
