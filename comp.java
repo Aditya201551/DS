@@ -10,8 +10,9 @@ public class comp {
         arr.add(new dataSet(10, 'b'));
         arr.add(new dataSet(2, 'f'));
 
-        Collections.sort(arr, new sortByFreq());
-        
+        /* Collections.sort(arr, new sortByFreq());
+                    OR*/
+        arr.sort(new sortByFreq());
         System.out.println(arr);
 
     }
