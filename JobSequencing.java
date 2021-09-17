@@ -5,7 +5,7 @@ public class JobSequencing {
     {
         Collections.sort(list,(a,b)->b.profit-a.profit);
         int max=list.stream().max(Comparator.comparing(l->l.deadline)).get().deadline;
-        System.out.println(max);
+        // System.out.println(max);
         char arr[]=new char[max];
         for(int i=0;i<max;i++)
             arr[i]='-';
