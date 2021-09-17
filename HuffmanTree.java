@@ -15,7 +15,7 @@ public class HuffmanTree {
                 map.put(ch, 1);
         }
 
-        PriorityQueue<Hnode> q=new PriorityQueue<>(map.size(), new ComparisonRule());//stores data to the queue according to the Comparison rule set by ComparisonRule class
+        PriorityQueue<Hnode> q=new PriorityQueue<>(map.size(), (a,b)->a.freq-b.freq);//stores data to the queue according to the Comparison rule set by ComparisonRule class
 
         for(Map.Entry<Character, Integer> entry: map.entrySet())
             q.add(new Hnode(entry.getValue(), entry.getKey()));
@@ -80,12 +80,5 @@ class Hnode{
         this.c=c;
 
         left=right=null;
-    }
-}
-
-class ComparisonRule implements Comparator<Hnode>{
-    public int compare(Hnode x, Hnode y)
-    {
-        return x.freq-y.freq;
     }
 }
