@@ -55,7 +55,7 @@ public class GraphWeighted {
     {
         initialize();
         pathLength[source]=0;
-        isPermanent[0]=true;
+        isPermanent[source]=true;
         int current=source;
         while(check())
         {
@@ -103,6 +103,33 @@ public class GraphWeighted {
         return false;
     }
 
+    //! Modification needed: Done in different code
+    // void bellmanFord(int source)
+    // {
+    //     initialize();
+    //     pathLength[source]=0;
+    //     Queue<HashMap<Integer, Integer>> q=new LinkedList<>();
+
+    //     q.add(graph.get(source));
+
+    //     while(q.isEmpty())
+    //     {
+    //         HashMap<Integer, Integer> current=q.poll();
+
+    //         for(Map.Entry<Integer, Integer> entry:current.entrySet())
+    //         {
+    //             int pathResult=pathLength[source]+entry.getValue();
+    //             if(pathResult<pathLength[entry.getKey()])
+    //             {
+    //                 pathLength[entry.getKey()]=pathResult;
+    //                 pred[entry.getKey()]=source;
+    //                 if (!q.contains(graph.get(entry.getKey())))
+    //                     q.add(graph.get(entry.getKey()));
+    //             }
+    //         }
+    //     }
+    // }
+
     void printGraph()
     {
         for(int i=0;i<graph.size();i++)
@@ -142,6 +169,7 @@ public class GraphWeighted {
         }
         // ob.printGraph();
         ob.dijkstra(0);
+        // ob.bellmanFord(0);
         // System.out.println(ob.pathLength[3]);
         System.out.println(Arrays.toString(ob.pathLength)+"\n"+Arrays.toString(ob.pred)+"\n"+Arrays.toString(ob.isPermanent));
         // ob.deleteEdge(0, 1);
