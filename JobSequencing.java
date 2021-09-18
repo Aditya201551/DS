@@ -1,5 +1,7 @@
 import java.util.*;
 public class JobSequencing {
+
+    int totalProfit = 0;
     
     char[] sequencer(ArrayList<jobs> list)
     {
@@ -16,6 +18,7 @@ public class JobSequencing {
             for(int j=list.get(i).deadline-1;j>=0;j--)
                 if(arr[j]=='-')
                 {
+                    totalProfit+=list.get(i).profit;
                     arr[j]=list.get(i).id;
                     break inner;
                 }
@@ -26,13 +29,14 @@ public class JobSequencing {
     public static void main(String[] args) {
         JobSequencing ob=new JobSequencing();
         ArrayList<jobs> list=new ArrayList<>();
-        list.add(new jobs('a', 2, 100));
-        list.add(new jobs('b', 1, 19));
-        list.add(new jobs('c', 2, 27));
-        list.add(new jobs('d', 1, 25));
-        list.add(new jobs('e', 3, 15));
+        list.add(new jobs('a', 5, 200));
+        list.add(new jobs('b', 3, 180));
+        list.add(new jobs('c', 3, 190));
+        list.add(new jobs('d', 2, 300));
+        list.add(new jobs('e', 4, 120));
+        list.add(new jobs('f', 2, 100));
 
-        System.out.println(Arrays.toString(ob.sequencer(list)));
+        System.out.println(Arrays.toString(ob.sequencer(list))+" with total profit of: "+ob.totalProfit);
 
     }
 }
