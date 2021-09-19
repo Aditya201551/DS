@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GridTravel",
+            "request": "launch",
+            "mainClass": "GridTravel",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci",
+            "projectName": "DS_c57d1758"
+        },
+        {
+            "type": "java",
             "name": "Launch BFordAlgorithm",
             "request": "launch",
             "mainClass": "BFordAlgorithm",
