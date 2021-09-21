@@ -66,10 +66,14 @@ public class CanSum {
     }
 
     public static void main(String[] args) {
-        CanSum ob=new CanSum();
-        System.out.println(ob.findSum(new int[]{50,150}, 100));
-        System.out.println(ob.findSum(21, new int[] {7,14}));
-        System.out.println(ob.findSum(300, new int[] { 7,14 }, new HashMap<>()));
+        // CanSum ob=new CanSum();
+        // System.out.println(ob.findSum(new int[]{50,150}, 100));
+        // System.out.println(ob.findSum(21, new int[] {7,14}));
+        // System.out.println(ob.findSum(300, new int[] { 7,14 }, new HashMap<>()));
 
+        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1,2,34,5));
+        ArrayList<Integer> l=list;
+        l.add(100);
+        System.out.println(l);
     }
 }
