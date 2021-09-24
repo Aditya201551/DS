@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch canConstruct",
+            "request": "launch",
+            "mainClass": "canConstruct",
+            "projectName": "DS_28b5af38"
+        },
+        {
+            "type": "java",
             "name": "Launch BestSum",
             "request": "launch",
             "mainClass": "BestSum",
