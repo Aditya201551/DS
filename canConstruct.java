@@ -22,7 +22,7 @@ public class canConstruct {
     {
         if(memo.containsKey(word))
             return memo.get(word);
-        if(word.length()==0)
+        if(word.equals(""))
             return true;
 
         for(String s:arr)
