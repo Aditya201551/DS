@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AllConstruct",
+            "request": "launch",
+            "mainClass": "AllConstruct",
+            "projectName": "DS_28b5af38"
+        },
+        {
+            "type": "java",
             "name": "Launch countConstruct",
             "request": "launch",
             "mainClass": "countConstruct",
