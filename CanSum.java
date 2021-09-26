@@ -1,3 +1,6 @@
+//Given a target number and an array of number:
+// return true if the sum of numbers in the array result to the target sum else return false 
+
 import java.util.*;
 public class CanSum {
 
@@ -65,15 +68,30 @@ public class CanSum {
         return false;
     }
 
-    public static void main(String[] args) {
-        // CanSum ob=new CanSum();
-        // System.out.println(ob.findSum(new int[]{50,150}, 100));
-        // System.out.println(ob.findSum(21, new int[] {7,14}));
-        // System.out.println(ob.findSum(300, new int[] { 7,14 }, new HashMap<>()));
+    //tabulation: time: O(target*numbers.length); Space: O(target)
+    boolean findCanSum(int target, int numbers[])
+    {
+        boolean arr[]=new boolean[target+1];
+        arr[0]=true;
+        for(int i=0;i<=target;i++){
+            if(arr[i])
+            {
+                for(int j:numbers)
+                    if(i+j<=arr.length)
+                        arr[i+j]=true;
+            }
+            if(arr[target]) //minor optimization
+                return true;
+        }
+        // System.out.println(Arrays.toString(arr));
+        return arr[target];
+    }
 
-        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(1,2,34,5));
-        ArrayList<Integer> l=list;
-        l.add(100);
-        System.out.println(l);
+    public static void main(String[] args) {
+        CanSum ob=new CanSum();
+        System.out.println(ob.findSum(new int[]{50,150}, 100));
+        System.out.println(ob.findSum(21, new int[] {7,14}));
+        System.out.println(ob.findSum(300, new int[] { 7,14 }, new HashMap<>()));
+        System.out.println(ob.findCanSum(21, new int[]{14,7}));
     }
 }

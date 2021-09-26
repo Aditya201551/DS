@@ -29,11 +29,35 @@ public class GridTravel {
         return memo.get(key);
     }
 
+    long traveler(int m, int n)
+    {
+        long grid[][]=new long[m+1][n+1];
+        grid[1][1]=1;
+        for(int i=0;i<=m;i++)
+            for(int j=0;j<=n;j++)
+            {
+                if(j!=n)
+                    grid[i][j+1]+=grid[i][j];
+                if(i!=m)
+                    grid[i+1][j]+=grid[i][j];
+            }
+        //     System.out.println();
+        //     for(int i=0;i<=m;i++){
+        //     for(int j=0;j<=n;j++)
+        //         System.out.print(grid[i][j]+" ");
+        //     System.out.println();
+        // }
+        // System.out.println();
+
+        return grid[m][n];
+    }
+
     public static void main(String[] args) {
         GridTravel ob=new GridTravel();
         
-        System.out.println(ob.travel(2,2));
-        // System.out.println(ob.travel(100, 100, new HashMap<String, Long>()));
+        // System.out.println(ob.travel(100,100));
+        System.out.println(ob.traveler(18, 18));
+        System.out.println(ob.travel(10, 10, new HashMap<String, Long>()));
 
         // int a=15,b=7;
         // String s=a+","+b;
