@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch HowSum",
+      "request": "launch",
+      "mainClass": "HowSum",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch CanSum",
       "request": "launch",
       "mainClass": "CanSum",
