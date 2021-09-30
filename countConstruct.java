@@ -52,5 +52,6 @@ public class countConstruct {
 
         System.out.println(ob.countWays("enterapotentpot", new String[]{"a","p","ent","enter","ot","o","t"}));
         System.out.println(ob.countWays("purple", new String[]{"p","purp","ur","le","purpl"}));
+        System.out.println(ob.countWays("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeea", new String[]{"e","ee","eee","eeee","eeeee"}));
     }
 }
