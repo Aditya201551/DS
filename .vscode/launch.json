@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch LongestPrefix",
+      "request": "launch",
+      "mainClass": "LongestPrefix",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch DungeonGame",
+      "request": "launch",
+      "mainClass": "DungeonGame",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubSequence",
+      "request": "launch",
+      "mainClass": "SubSequence",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch HowSum",
       "request": "launch",
       "mainClass": "HowSum",
