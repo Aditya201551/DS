@@ -53,14 +53,14 @@ public class DungeonGame {
     public static void main(String[] args) {
         DungeonGame ob=new DungeonGame();
         
-        // System.out.println(ob.calculateMinimumHP(new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}})+"\n");
+        System.out.println(ob.calculateMinimumHP(new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}})+"\n");
 
-        // for(int i=0;i<ob.result.length;i++){
-        //     for(int j=0;j<ob.result[0].length;j++)
-        //         System.out.print(ob.result[i][j]+"\t");
-        //     System.out.println();
-        // }
+        for(int i=0;i<ob.result.length;i++){
+            for(int j=0;j<ob.result[0].length;j++)
+                System.out.print(ob.result[i][j]+"\t");
+            System.out.println();
+        }
 
-        System.out.println(ob.travel(0, 0, new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}}, new HashMap<>()));
+        System.out.println("\n"+ob.travel(0, 0, new int[][]{{-2,-3,3},{-5,-10,1},{10,30,-5}}, new HashMap<>()));
     }
 }
