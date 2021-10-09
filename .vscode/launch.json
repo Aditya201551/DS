@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch NodeTest",
+      "request": "launch",
+      "mainClass": "NodeTest",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch PlusOne",
+      "request": "launch",
+      "mainClass": "PlusOne",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch DuplicatesElement",
+      "request": "launch",
+      "mainClass": "DuplicatesElement",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch ClimbStairs",
+      "request": "launch",
+      "mainClass": "ClimbStairs",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch MergeLists",
+      "request": "launch",
+      "mainClass": "MergeLists",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch LongestPrefix",
       "request": "launch",
       "mainClass": "LongestPrefix",
