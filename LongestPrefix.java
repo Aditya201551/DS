@@ -1,5 +1,5 @@
 class LongestPrefix{
-    String check(String arr[])
+String check(String arr[])
     {
         if(arr==null)
             return "";

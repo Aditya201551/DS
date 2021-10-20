@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch StackUsingQueue",
+      "request": "launch",
+      "mainClass": "StackUsingQueue",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch QueueUsingStack",
+      "request": "launch",
+      "mainClass": "QueueUsingStack",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch FreqCheck",
+      "request": "launch",
+      "mainClass": "FreqCheck",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch DThread",
+      "request": "launch",
+      "mainClass": "DThread",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch HuffmanTree",
+      "request": "launch",
+      "mainClass": "HuffmanTree",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch calculator",
+      "request": "launch",
+      "mainClass": "calculator",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch RevString",
+      "request": "launch",
+      "mainClass": "RevString",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch NodeTest",
       "request": "launch",
       "mainClass": "NodeTest",
