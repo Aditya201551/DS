@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch student",
+      "request": "launch",
+      "mainClass": "student",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch two",
+      "request": "launch",
+      "mainClass": "pkgs.pkg2.two",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch StackUsingQueue",
       "request": "launch",
       "mainClass": "StackUsingQueue",
