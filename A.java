@@ -9,7 +9,8 @@ public class A extends B{
         System.out.println("A");
     }
     public static void main(String[] args){
-        A a = new A();
-        a.say();
+        B b=new A();
+        b.say();
+
     }
 }
