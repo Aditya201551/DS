@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Sorts",
+      "request": "launch",
+      "mainClass": "Sorts",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch thread",
+      "request": "launch",
+      "mainClass": "thread",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
+      "name": "Launch StringPermutation",
+      "request": "launch",
+      "mainClass": "StringPermutation",
+      "projectName": "DS_28b5af38"
+    },
+    {
+      "type": "java",
       "name": "Launch A",
       "request": "launch",
       "mainClass": "A",
